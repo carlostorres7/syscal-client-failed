@@ -15,7 +15,7 @@ const routes: Routes = [
     loadChildren: () => import("./pages/full/full.module").then( m => m.FullModule )
   },
   { path: "", redirectTo: "content/login", pathMatch: "full" },
-  { path: "**", redirectTo: "content/login", pathMatch: "full" }
+  { path: "**", redirectTo: "content/login", pathMatch: "prefix" }
 ];
 
 @NgModule({
