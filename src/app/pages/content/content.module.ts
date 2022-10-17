@@ -9,10 +9,9 @@ import { RecoverComponent } from './recover/recover.component';
 
 @NgModule({
   declarations: [
-  
     LoginComponent,
-       SignupComponent,
-       RecoverComponent
+    SignupComponent,
+    RecoverComponent
   ],
   imports: [
     CommonModule,
