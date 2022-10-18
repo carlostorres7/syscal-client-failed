@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './layouts/content/content.component';
 import { FullComponent } from './layouts/full/full.component';
 import { SharedModule } from './shared/shared.module';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
