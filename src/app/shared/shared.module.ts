@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { ActiveLinkDirective } from './directives/active-link.directive';
 import { ToggleSidebarDirective } from './directives/toggle-sidebar.directive';
 
-
 @NgModule({
   declarations: [
     SidebarComponent,
