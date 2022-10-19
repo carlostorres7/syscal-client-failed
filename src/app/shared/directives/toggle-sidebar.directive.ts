@@ -24,10 +24,5 @@ export class ToggleSidebarDirective {
     this.toggle = !this.toggle;
   }
 
-  /*
-  @HostListener('click') onblur() {
-    this.renderer.addClass(this.document.body, 'toggle-sidebar');
-  }
-  */
 
 }
