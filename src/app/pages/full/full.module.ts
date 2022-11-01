@@ -14,6 +14,11 @@ import { OrderReportComponent } from './home/order-report/order-report.component
 import { MonthReportComponent } from './home/month-report/month-report.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
+import { WorkOrdersComponent } from './work-orders/work-orders.component';
+import { TechniciansComponent } from './technicians/technicians.component';
+import { ConsolidatedComponent } from './consolidated/consolidated.component';
+import { CvComponent } from './cv/cv.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -28,7 +33,12 @@ import { ProductsComponent } from './products/products.component';
     OrderReportComponent,
     MonthReportComponent,
     ServicesComponent,
-    ProductsComponent
+    ProductsComponent,
+    WorkOrdersComponent,
+    TechniciansComponent,
+    ConsolidatedComponent,
+    CvComponent,
+    UsersComponent
   ],
   imports: [
     CommonModule,
