@@ -1,7 +1,7 @@
 
    <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Crear Nuevo Servico
+    Crear Nuevo Servicio
   </button>
   
   <!-- Modal -->
@@ -40,7 +40,7 @@
                     <div class="col-md-6">
                       <div class="col-md-12">
                         <div class="form-floating">
-                          <input type="text" class="form-control" id="floatingPrice" placeholder="Price">
+                          <input type="number" class="form-control" id="floatingPrice" placeholder="Price">
                           <label for="floatingPrice">Precio</label>
                         </div>
                       </div>
@@ -67,4 +67,32 @@
         
       </div>
     </div>
+  </div>
+
+  <div>Aqui ira la tabla que listara los servicios existentes </div>
+
+  <div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre Servicio</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Ref.Motocicleta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SE1234</th>
+            <td>Cambio Aceite</td>
+            <td>Drenaje y reemplazo de aceite motor</td>
+            <td>5000</td>
+            <td>scooter</td>
+            <td><button class="bi bi-pencil"></button></td>
+            <td><button class="bi bi-trash-fill"></button></td>
+          </tr>
+          
+        </tbody>
+      </table>
   </div>
