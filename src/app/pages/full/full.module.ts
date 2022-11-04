@@ -15,10 +15,11 @@ import { MonthReportComponent } from './home/month-report/month-report.component
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
 import { WorkOrdersComponent } from './work-orders/work-orders.component';
-import { TechniciansComponent } from './technicians/technicians.component';
 import { ConsolidatedComponent } from './consolidated/consolidated.component';
 import { CvComponent } from './cv/cv.component';
 import { UsersComponent } from './users/users.component';
+import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
+import { TechniciansComponent } from './technician/technicians/technicians.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { UsersComponent } from './users/users.component';
     TechniciansComponent,
     ConsolidatedComponent,
     CvComponent,
-    UsersComponent
+    UsersComponent,
+    TechnicianListComponent
   ],
   imports: [
     CommonModule,
