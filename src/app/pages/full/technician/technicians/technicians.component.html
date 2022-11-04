@@ -1,20 +1,14 @@
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title">Crear Nuevo </h5>
+        <h5 class="card-title">Perfil Técnico</h5>
         <section class="section profile">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                            <img src="../../../../assets/assets/img/profile-img.jpg" alt="Profile"
-                                class="rounded-circle">
+                            <img src="../../../../assets/assets/img/profile-img.jpg" alt="Profile">
                             <h2>Carlos Torres</h2>
-                            <h3>Desarrollador Front-End</h3>
-                            <div class="social-links mt-2">
-                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                            </div>
+                            <h3>Desarrollador Front-End</h3>                            
                         </div>
                     </div>
                 </div>
@@ -189,33 +183,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="row mb-3">
-                                        <label for="Facebook" class="col-md-4 col-lg-3 col-form-label">Facebook
-                                            Profile</label>
-                                        <div class="col-md-8 col-lg-9">
-                                            <input name="facebook" type="text" class="form-control" id="Facebook"
-                                                value="https://facebook.com/#">
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Instagram
-                                            Profile</label>
-                                        <div class="col-md-8 col-lg-9">
-                                            <input name="instagram" type="text" class="form-control" id="Instagram"
-                                                value="https://instagram.com/#">
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <label for="Linkedin" class="col-md-4 col-lg-3 col-form-label">Linkedin
-                                            Profile</label>
-                                        <div class="col-md-8 col-lg-9">
-                                            <input name="linkedin" type="text" class="form-control" id="Linkedin"
-                                                value="https://linkedin.com/#">
-                                        </div>
-                                    </div>
-
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                                     </div>
@@ -223,8 +190,167 @@
 
                             </div>
 
-                            <div class="tab-pane fade cert-edit pt-3" id="certi-edit">
+                            <!--Modal Add-->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario para la edición de una Certificación</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Editar Certificación</h5>
+                                        
+                                            <!-- Floating Labels Form -->
+                                            <form class="row g-3">
+                                                <div class="col-md-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Nombre de la Certificación</label>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Intensidad Horaria</label>
+                                                </div>
+                                                </div>
+                                                <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Institución</label>
+                                                </div>
+                                                </div>
 
+                                                <div class="col-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                        <label for="floatingText">Año</label>
+                                                    </div>
+                                                    </div>
+                                                                          
+                                                <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                                                <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
+                                                </div>
+                                            </form><!--End floating Labels Form -->
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+                            <!--Modal Created-->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario para la creación de una certificación</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Crear Certificación</h5>
+                                        
+                                            <!-- Floating Labels Form -->
+                                            <form class="row g-3">
+                                                <div class="col-md-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Nombre de la Certificación</label>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Intensidad Horaria</label>
+                                                </div>
+                                                </div>
+                                                <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                    <label for="floatingText">Institución</label>
+                                                </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="floatingText" placeholder="code">
+                                                        <label for="floatingText">Año</label>
+                                                    </div>
+                                                    </div>
+                                                                            
+                                                <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Crear</button>
+                                                <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
+                                                </div>
+                                            </form><!--End floating Labels Form -->
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+                            <!--Modal View Certificated-->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Vista de Certificación Seleccionada</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Imagen de Certificación</h5>
+                                        
+                                            
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+                            <!--Table -->
+                            <div class="tab-pane fade cert-edit pt-3" id="certi-edit">
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Certificación</th>
+                                        <th scope="col">Intensidad en horas</th>
+                                        <th scope="col">Institución</th>
+                                        <th scope="col">Año</th>
+
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Mecánica de Motos</td>
+                                        <td>470 horas</td>
+                                        <td>Coorporación Univeristaria Autonoma de Nariño</td>
+                                        <td>2011</td>
+                                        <td><button type="button" title="Eliminar registro" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                                        <td><button type="button" title="Editar Registro" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="bi bi-pencil-fill"></i></button></td>
+                                        <td><button type="button" title="Ver Certificación" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-eye-fill"></i></button></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                <div class="text-center">
+                                    <button type="button" title="Agregar Nueva Certificación" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button>                                
+                                </div>
                             </div>
 
 
