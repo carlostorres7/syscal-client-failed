@@ -14,12 +14,13 @@ import { OrderReportComponent } from './home/order-report/order-report.component
 import { MonthReportComponent } from './home/month-report/month-report.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
-import { WorkOrdersComponent } from './work-orders/work-orders.component';
+import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
 import { ConsolidatedComponent } from './consolidated/consolidated.component';
 import { CvComponent } from './cv/cv.component';
 import { UsersComponent } from './users/users.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
+import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { TechniciansComponent } from './technician/technicians/technicians.compo
     ConsolidatedComponent,
     CvComponent,
     UsersComponent,
-    TechnicianListComponent
+    TechnicianListComponent,
+    WorkOrdersListComponent
   ],
   imports: [
     CommonModule,
