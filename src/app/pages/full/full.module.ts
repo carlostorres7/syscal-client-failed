@@ -21,6 +21,7 @@ import { UsersComponent } from './users/users.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
 import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
+import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orde
     CvComponent,
     UsersComponent,
     TechnicianListComponent,
-    WorkOrdersListComponent
+    WorkOrdersListComponent,
+    CreateWorkOrdersComponent
   ],
   imports: [
     CommonModule,

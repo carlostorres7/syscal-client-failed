@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
 import { UsersComponent } from './users/users.component';
+import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
 import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
 import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: "consolidated", component: ConsolidatedComponent },
   { path: "work-order-list", component: WorkOrdersListComponent },
   { path: "work-orders", component: WorkOrdersComponent },
+  { path: "create-work-orders", component: CreateWorkOrdersComponent },
   { path: "cv", component: CvComponent },
   { path: "users", component: UsersComponent },
 ];
