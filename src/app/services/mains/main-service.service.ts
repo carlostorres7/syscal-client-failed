@@ -13,7 +13,7 @@ export class MainServiceService {
   constructor( private http: HttpClient) { }
 
   getAll(): Observable<MainRouting[]> {
-    return this.http.get<MainRouting[]>(this.url);
+    return this.http.get<MainRouting[]>(this.url, { withCredentials: true });
   }
 
 
