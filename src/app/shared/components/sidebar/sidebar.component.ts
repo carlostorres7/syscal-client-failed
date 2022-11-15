@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { MainServiceService } from 'src/app/services/mains/main-service.service';
 import { MainRouting } from '../../models/main-routing';
 
@@ -11,11 +12,12 @@ export class SidebarComponent implements OnInit {
 
   mains?: MainRouting[];
 
-  constructor( private mainServiceService: MainServiceService) { }
+  constructor( private authService: AuthService) { }
   
 
   ngOnInit(): void {
-    this.mainServiceService.getAll().subscribe( value => this.mains = value )
+    this.mains = this.authService.getMains();
+    console.log(this.mains)
   }
 
 }

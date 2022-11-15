@@ -5,6 +5,7 @@ import { ContentRoutingModule } from './content-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { RecoverComponent } from './recover/recover.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { RecoverComponent } from './recover/recover.component';
   ],
   imports: [
     CommonModule,
-    ContentRoutingModule
+    ContentRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ContentModule { }
