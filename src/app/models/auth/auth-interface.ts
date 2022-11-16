@@ -16,6 +16,7 @@ export interface RolesModel {
 
 export interface AuthServiceResponse extends AuthInterface {
     id: number;
+    name: string;
     email: string;
     roles: RolesModel;
     auth_token: string;

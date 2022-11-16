@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-/*
+
 import { AuthInterceptor } from './auth.interceptor';
 
 
@@ -15,4 +15,3 @@ describe('AuthInterceptor', () => {
     expect(interceptor).toBeTruthy();
   });
 });
-*/
