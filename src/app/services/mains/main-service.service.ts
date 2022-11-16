@@ -16,5 +16,8 @@ export class MainServiceService {
     return this.http.get<MainRouting[]>(this.url, { withCredentials: true });
   }
 
-
+  getMainsByUserId(userId: string): Observable<MainRouting[]> {
+    return this.http.get<MainRouting[]>(this.url + userId);
+  }
+  
 }
