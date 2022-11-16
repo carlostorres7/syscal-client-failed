@@ -1,10 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { ReturnStatement } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import { map, Observable, Subject, tap } from 'rxjs';
+import { Router } from '@angular/router';
+import { Observable, tap } from 'rxjs';
 import { AuthInterface, AuthServiceResponse } from 'src/app/models/auth/auth-interface';
 import { MainRouting } from 'src/app/shared/models/main-routing';
 import { environment } from 'src/environments/environment';
+import decode from 'jwt-decode'
+import { AlertService } from '../alert/alert.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +18,10 @@ export class AuthService {
   private name_key_user: string = 'user-info';
   private userInfo?: AuthServiceResponse;
 
-  constructor(private http: HttpClient) {
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+    private alertService: AlertService) {
     this.uri = environment.url + 'auth/';
   }
 
@@ -59,6 +64,33 @@ export class AuthService {
 
   private setUserInfo(data: AuthServiceResponse) {
     localStorage.setItem(this.name_key_user,JSON.stringify(data));
+  }
+
+
+  isAuthenticated() {
+    let data_token = localStorage.getItem('auth-token');
+    if (data_token) {
+      let user_info = JSON.stringify(data_token).split(";");
+      let access_token = user_info[0].replace("\"Bearer=","");
+      let payload: any = decode(access_token)
+      let expire = new Date(payload.exp * 1000);
+      let hoy = new Date()
+      if (hoy > expire) {
+        this.logout();
+        return false
+      }
+      return true
+    } else {
+      this.logout();
+      return false;
+    }
+
+  }
+
+  logout() { 
+    this.alertService.errorAlert("Por favor inicie sesión..!")
+    localStorage.clear();
+    this.router.navigate(['/content/login']);
   }
 
 }

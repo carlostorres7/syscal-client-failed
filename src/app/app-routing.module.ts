@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentComponent } from './layouts/content/content.component';
 import { FullComponent } from './layouts/full/full.component';
+import { AuthGuard } from './services/auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -12,10 +13,11 @@ const routes: Routes = [
   {
     path: "full",
     component: FullComponent,
+    canActivate: [AuthGuard],
     loadChildren: () => import("./pages/full/full.module").then( m => m.FullModule )
   },
   { path: "", redirectTo: "content/login", pathMatch: "full" },
-  { path: "**", redirectTo: "content/login", pathMatch: "prefix" }
+  { path: "**", redirectTo: "content/login", pathMatch: "full" }
 ];
 
 @NgModule({
