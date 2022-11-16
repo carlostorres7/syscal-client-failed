@@ -39,7 +39,7 @@ export class AuthService {
     let data: string | null = localStorage.getItem(this.name_key_user);
     let user_info: AuthServiceResponse = JSON.parse((data)? data : '');
     this.userInfo = user_info;
-    return user_info;
+    return this.userInfo;
   }
 
   getMains(): MainRouting[] | undefined {
