@@ -7,9 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServicesComponent } from './services/services.component';
-import { TechniciansComponent } from './technicians/technicians.component';
+import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
+import { TechniciansComponent } from './technician/technicians/technicians.component';
 import { UsersComponent } from './users/users.component';
-import { WorkOrdersComponent } from './work-orders/work-orders.component';
+import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
+import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
+import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
 
 
 const routes: Routes = [
@@ -19,8 +22,11 @@ const routes: Routes = [
   { path: "services", component: ServicesComponent },
   { path: "products", component: ProductsComponent },
   { path: "technicians", component: TechniciansComponent },
+  { path: "technicians/list", component: TechnicianListComponent },
   { path: "consolidated", component: ConsolidatedComponent },
+  { path: "work-order-list", component: WorkOrdersListComponent },
   { path: "work-orders", component: WorkOrdersComponent },
+  { path: "create-work-orders", component: CreateWorkOrdersComponent },
   { path: "cv", component: CvComponent },
   { path: "users", component: UsersComponent },
 ];

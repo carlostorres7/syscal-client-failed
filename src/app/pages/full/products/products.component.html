@@ -1,12 +1,6 @@
 <div class="pagetitle">
     <h1>Productos</h1>
-    <nav>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Productos</li>
-      </ol>
-    </nav>
-  </div><!-- End Page Title -->
+</div><!-- End Page Title -->
   
      
      
@@ -16,7 +10,7 @@
     </button>
     
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -30,13 +24,8 @@
               
                     <!-- Floating Labels Form -->
                     <form class="row g-3">
-                      <div class="col-md-6">
-                        <div class="form-floating">
-                          <input type="number" class="form-control" id="floatingText" placeholder="code">
-                          <label for="floatingText">Código</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
+                      
+                      <div class="col-md-12">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="floatingText" placeholder="nameService">
                           <label for="floatingText">Nombre Producto</label>
@@ -48,13 +37,8 @@
                           <label for="floatingTextarea">Descripción</label>
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="form-floating">
-                          <textarea class="form-control" placeholder="Description" id="floatingTextarea" style="height: 100px;"></textarea>
-                          <label for="floatingTextarea">Compatibilidad</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
+                      
+                      <div class="col-md-12">
                         <div class="col-md-12">
                           <div class="form-floating">
                             <input type="text" class="form-control" id="floatingPrice" placeholder="Price">
@@ -90,13 +74,8 @@
               
                     <!-- Floating Labels Form -->
                     <form class="row g-3">
-                      <div class="col-md-6">
-                        <div class="form-floating">
-                          <input type="number" class="form-control" id="floatingText" placeholder="code">
-                          <label for="floatingText">Código</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
+                      
+                      <div class="col-md-12">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="floatingText" placeholder="nameService">
                           <label for="floatingText">Nombre Producto</label>
@@ -108,13 +87,8 @@
                           <label for="floatingTextarea">Descripción</label>
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="form-floating">
-                          <textarea class="form-control" placeholder="Description" id="floatingTextarea" style="height: 100px;"></textarea>
-                          <label for="floatingTextarea">Compatibilidad</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
+                      
+                      <div class="col-md-12">
                         <div class="col-md-12">
                           <div class="form-floating">
                             <input type="text" class="form-control" id="floatingPrice" placeholder="Price">
@@ -139,31 +113,25 @@
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">Código</th>
           <th scope="col">Nombre Producto</th>
           <th scope="col">Descripción</th>
-          <th scope="col">Compatibilidad</th>
           <th scope="col">Precio</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">SE1234</th>
           <td>Aceite Motor</td>
           <td>Aceite Motor Mobil 20w-50 Mineral</td>
-          <td>Motocicletas de cilindrajes menores a 200 cc</td>
           <td>35000</td>
-          <td><button class="btn btn-danger">eliminar</button></td>
-          <td><button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">editar</button></td>
+          <td><button type="button" title="Eliminar registro" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+          <td><button type="button" title="Editar Registro" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-fill"></i></button></td>
         </tr>
         <tr>
-          <th scope="row">SE2345</th>
           <td>Bujia NGK CR7HSA</td>
           <td>Bujía </td>
-          <td>AKT(special-flex-dinamic) </td>
           <td>9000</td>
-          <td><button class="btn btn-danger">eliminar</button></td>
-          <td><button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">editar</button></td>
+          <td><button type="button" title="Eliminar registro" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+          <td><button type="button" title="Editar Registro" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-fill"></i></button></td>
         </tr>
       </tbody>
     </table>

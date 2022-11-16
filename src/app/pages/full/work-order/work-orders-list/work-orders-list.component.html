@@ -1,0 +1,34 @@
+
+<div class="pagetitle">
+    <h1>Ordenes de Trabajo</h1>
+</div><!-- End Page Title -->
+  
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" routerLink="/full/create-work-orders">
+    Nueva Orden de Trabajo
+</button>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Numero de Orden</th>
+            <th scope="col">Técnico</th>
+            <th scope="col">Marca Motocicleta</th>
+            <th scope="col">Ref. Motocicleta</th>
+            <th scope="col">Fecha de Ingreso</th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">OT1234</th>
+            <td>Daniel Reina</td>
+            <td>Suzuki</td>
+            <td>AX-4</td>
+            <td>17/07/2022</td>
+            <td>Terminada</td>
+            <td><button type="button" title="Eliminar registro" class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+            <td><button type="button" title="Ver detalles" class="btn btn-info" routerLink="/full/work-orders"><i class="bi bi-eye-fill"></i></button></td>
+        </tr>
+    </tbody>
+</table>
