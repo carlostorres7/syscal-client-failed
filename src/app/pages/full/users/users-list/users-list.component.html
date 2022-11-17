@@ -35,7 +35,7 @@
 
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                              <select class="form-select" id="floatingSelect" aria-label="Ref.Mark">
+                              <select class="form-select" id="floatingSelect" aria-label="Ref.Mark" formControlName="rol_id">
                                 <option value="1">Admin</option>
                                 <option value="2">Técnico</option>
                                 <option value="3">Cliente</option>
@@ -91,6 +91,7 @@
             <th scope="col">Usuario</th>
             <th scope="col">Email</th>
             <th scope="col">Nombre de Usuario</th>
+            <th scope="col">Rol</th>
         </tr>
     </thead>
     <tbody>
@@ -98,6 +99,7 @@
             <td>{{user.name}}</td>
             <td>{{user.email}}</td>
             <td>{{user.username}}</td>
+            <td>{{user.rol_name}}</td>
             <td><button type="button" title="Eliminar registro" class="btn btn-danger" (click)="deleteUser(user.id)"><i class="bi bi-trash"></i></button></td>
             <td><button type="button" title="Ver detalles" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="bi bi-pencil"></i></button></td>
         
