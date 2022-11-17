@@ -17,11 +17,12 @@ import { ProductsComponent } from './products/products.component';
 import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
 import { ConsolidatedComponent } from './consolidated/consolidated.component';
 import { CvComponent } from './cv/cv.component';
-import { UsersComponent } from './users/users.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
 import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
 import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
+import { UsersListComponent } from './users/users-list/users-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,15 +42,17 @@ import { CreateWorkOrdersComponent } from './work-order/create-work-orders/creat
     TechniciansComponent,
     ConsolidatedComponent,
     CvComponent,
-    UsersComponent,
     TechnicianListComponent,
     WorkOrdersListComponent,
-    CreateWorkOrdersComponent
+    CreateWorkOrdersComponent,
+    UsersListComponent
   ],
   imports: [
     CommonModule,
     FullRoutingModule,
-    NgChartsModule
+    NgChartsModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class FullModule { }
