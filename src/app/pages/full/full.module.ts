@@ -14,15 +14,16 @@ import { OrderReportComponent } from './home/order-report/order-report.component
 import { MonthReportComponent } from './home/month-report/month-report.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
-import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
 import { ConsolidatedComponent } from './consolidated/consolidated.component';
 import { CvComponent } from './cv/cv.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
-import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
-import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WorkOrderComponent } from './work-order/work-order.component';
+import { WorkOrderCreateComponent } from './work-order/work-order-create/work-order-create.component';
+import { WorkOrderListComponent } from './work-order/work-order-list/work-order-list.component';
+import { WorkOrderDetailComponent } from './work-order/work-order-detail/work-order-detail.component';
 
 
 @NgModule({
@@ -38,14 +39,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MonthReportComponent,
     ServicesComponent,
     ProductsComponent,
-    WorkOrdersComponent,
     TechniciansComponent,
     ConsolidatedComponent,
     CvComponent,
     TechnicianListComponent,
-    WorkOrdersListComponent,
-    CreateWorkOrdersComponent,
-    UsersListComponent
+    UsersListComponent,
+    WorkOrderComponent,
+    WorkOrderCreateComponent,
+    WorkOrderListComponent,
+    WorkOrderDetailComponent
   ],
   imports: [
     CommonModule,

@@ -18,7 +18,6 @@ export class AuthInterceptor implements HttpInterceptor {
     let data_token = JSON.stringify(localStorage.getItem('auth-token')).split(";");
 
     if (!data_token) {
-      console.log('resta')
       return next.handle(request);
     } else {
 

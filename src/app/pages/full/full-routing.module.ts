@@ -10,9 +10,10 @@ import { ServicesComponent } from './services/services.component';
 import { TechnicianListComponent } from './technician/technician-list/technician-list.component';
 import { TechniciansComponent } from './technician/technicians/technicians.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
-import { CreateWorkOrdersComponent } from './work-order/create-work-orders/create-work-orders.component';
-import { WorkOrdersListComponent } from './work-order/work-orders-list/work-orders-list.component';
-import { WorkOrdersComponent } from './work-order/work-orders/work-orders.component';
+import { WorkOrderCreateComponent } from './work-order/work-order-create/work-order-create.component';
+import { WorkOrderDetailComponent } from './work-order/work-order-detail/work-order-detail.component';
+import { WorkOrderListComponent } from './work-order/work-order-list/work-order-list.component';
+import { WorkOrderComponent } from './work-order/work-order.component';
 
 
 const routes: Routes = [
@@ -24,11 +25,15 @@ const routes: Routes = [
   { path: "technicians", component: TechniciansComponent },
   { path: "technicians/list", component: TechnicianListComponent },
   { path: "consolidated", component: ConsolidatedComponent },
-  { path: "work-order-list", component: WorkOrdersListComponent },
-  { path: "work-orders", component: WorkOrdersComponent },
-  { path: "create-work-orders", component: CreateWorkOrdersComponent },
+  { path: 'work-order' , component: WorkOrderComponent, 
+    children: [
+      { path: "list", component: WorkOrderListComponent },
+      { path: "create", component: WorkOrderCreateComponent },
+      { path: "detail", component: WorkOrderDetailComponent },
+    ]
+  },
   { path: "cv", component: CvComponent },
-  { path: "users/list", component: UsersListComponent },
+  { path: "users", component: UsersListComponent },
 ];
 
 @NgModule({

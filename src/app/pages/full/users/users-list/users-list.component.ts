@@ -62,11 +62,9 @@ export class UsersListComponent implements OnInit, OnDestroy {
     if (userId) {
       this.userService.deleteById(userId).subscribe(
         _ => {
-        this.alertService.successAlert("Se registro se elimino con exito..!!");
-      },
-      error => {
-        this.alertService.errorAlert("ha ocurrido un error");
-      })
+          this.getAllUsers();
+          this.alertService.successAlert("Se registro se elimino con exito..!!");
+        })
     }
   }
 
